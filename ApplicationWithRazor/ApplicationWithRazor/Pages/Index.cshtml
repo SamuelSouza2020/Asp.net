@@ -2,16 +2,18 @@
 @model IndexModel
 @{
     ViewData["Title"] = "Home page";
+    string titulo = "Koe rapaziada";
 }
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Razor na area</title>
+        <title>@titulo</title>
     </head>
     <body>
         <div class="text-center">
             <h1 class="display-4">Hello World! BRAZIL</h1>
             <p>Kooe.</p>
+            <p>@DateTime.Now</p>
         </div>
     </body>
 </html>
