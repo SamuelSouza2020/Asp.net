@@ -1,0 +1,50 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+
+    int firstNumber = 10;
+    int secondNumber = 2;
+    int subtration, multiplication, sumNumber, division;
+    int moreOne = 5, minusOne = 5;
+
+    sumNumber = firstNumber + secondNumber;
+    subtration = firstNumber - secondNumber;
+    division = firstNumber / secondNumber;
+    multiplication = firstNumber * secondNumber;
+
+    moreOne++;
+    minusOne--;
+
+    bool itsTrue = false;
+
+    int[] valuesPC = new int[] { 10, 20, 30, 40, 50 };
+    List<String> nameUsed = new List<string>() { "Pedro", "Juli", "Ronaldo", "Fernanda", "Bruna" };
+}
+
+<div class="text-center">
+    <h1 class="display-4">Hi</h1>
+    <p>It´s sum the numbers: @firstNumber + @secondNumber = @sumNumber</p>
+    <p>It´s subtration the numbers: @firstNumber - @secondNumber = @subtration</p>
+    <p>It´s division the numbers: @firstNumber / @secondNumber = @division</p>
+    <p>It´s multiplication the numbers: @firstNumber * @secondNumber = @multiplication</p>
+    <p>It´s average the numbers: @((firstNumber + @secondNumber) / 2)</p>
+    <br />
+    <p>5 + 1: @moreOne++ with increment</p>
+    <p>5 - 1: @minusOne with decrement</p>
+
+    @{
+        if(itsTrue || sumNumber > subtration)
+        {
+            <p>You win</p>
+            <p>@valuesPC[3]</p>
+            <p>@nameUsed[3]</p>
+        }
+        else
+        {
+            <p>You LLLLLLose</p>
+            <p>@valuesPC[0]</p>
+            <p>@nameUsed[0]</p>
+        }
+    }
+</div>
