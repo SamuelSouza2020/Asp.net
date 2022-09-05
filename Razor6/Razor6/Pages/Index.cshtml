@@ -1,0 +1,13 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+    //Soma
+    int intDez = 10;
+    string stringDez = "10";
+}
+
+<div class="text-center">
+    <p>@(1+2)</p>
+    <p>Eu tenho @stringDez anos e meu pai tem @(@intDez + @intDez) anos</p>
+</div>
