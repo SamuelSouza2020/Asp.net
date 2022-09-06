@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32825.248
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RazorLoops", "RazorLoops\RazorLoops.csproj", "{58B2950F-6AE4-40A9-9807-0361E08F8205}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{58B2950F-6AE4-40A9-9807-0361E08F8205}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58B2950F-6AE4-40A9-9807-0361E08F8205}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58B2950F-6AE4-40A9-9807-0361E08F8205}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58B2950F-6AE4-40A9-9807-0361E08F8205}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0A25ECC8-522A-4DE8-8801-4F560C105878}
+	EndGlobalSection
+EndGlobal

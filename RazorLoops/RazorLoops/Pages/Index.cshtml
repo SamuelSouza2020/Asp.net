@@ -1,0 +1,26 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+
+    List<string> Names = new List<string>() { "John", "Samantha", "Roby", "Carlos" };
+}
+
+@{
+    for (int count = 0; count < 10; count++)
+    {
+        <p>Number: @count</p>
+    }
+
+    foreach (var item in Names)
+    {
+        <p>Your name's': @item</p>
+    }
+    <br />
+    int initialNumber = 0;
+    while(initialNumber < Names.Count)
+    {
+        <p>Name: @Names[initialNumber]</p>
+        initialNumber++;
+    }
+}
