@@ -9,9 +9,13 @@ namespace FirstProjectInMVC.Controllers
     public class HomeController : Controller
     {
         // GET: Home  metodo
-        public ActionResult Index()
+        //public ActionResult Index()
+        //{
+        //    return View();
+        //}
+        public string Index()
         {
-            return View();
+            return "Hello World";
         }
     }
 }
