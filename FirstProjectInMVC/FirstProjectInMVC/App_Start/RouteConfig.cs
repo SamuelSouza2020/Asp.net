@@ -13,10 +13,16 @@ namespace FirstProjectInMVC
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
+            //routes.MapRoute(
+            //    name: "Default",
+            //    url: "{controller}/{action}/{id}",
+            //    defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+            //);
+
             routes.MapRoute(
-                name: "Default",
-                url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+                name: "HomePage",//nome da rota, esse nome é unico
+                url: "", //quando acessar a url vazia, vai ser chamado o metodo Home e Index
+                defaults: new { controller = "Home", action = "Index" }
             );
         }
     }
