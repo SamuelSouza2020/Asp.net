@@ -13,9 +13,13 @@ namespace FirstProjectInMVC.Controllers
         //{
         //    return View();
         //}
-        public string Index()
+        public ActionResult Index()
         {
-            return "Hello World";
+            return View();
+        }
+        public ActionResult Contato()
+        {
+            return View();
         }
     }
 }

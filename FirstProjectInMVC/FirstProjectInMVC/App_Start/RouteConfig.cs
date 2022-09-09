@@ -20,9 +20,14 @@ namespace FirstProjectInMVC
             //);
 
             routes.MapRoute(
-                name: "HomePage",//nome da rota, esse nome é unico
+                name: "Home.Index",//nome da rota, esse nome é unico
                 url: "", //quando acessar a url vazia, vai ser chamado o metodo Home e Index
                 defaults: new { controller = "Home", action = "Index" }
+            );
+            routes.MapRoute(
+                name: "Home.Contato",
+                url: "contato",
+                defaults: new { controller = "Home", action = "Contato" }
             );
         }
     }
