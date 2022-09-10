@@ -17,11 +17,14 @@ namespace FirstProjectInMVC.Controllers
         public ActionResult Index()
         {
             //ViewData["Titulo"] = "Home - Index";
-            ViewBag.Titulo = "Home - Index";
+            
+            //ViewBag.Titulo = "Home - Index";
 
-            HomeIndexModel model = new HomeIndexModel();
-            model.TituloDaPagina = "Home - Index";
-            model.DataAtual = DateTime.Now;
+            //HomeIndexModel model = new HomeIndexModel();
+            //model.TituloDaPagina = "Home - Index";
+            //model.DataAtual = DateTime.Now;
+
+            HomeContatoModel model = new HomeContatoModel();
 
             return View(model);
         }
