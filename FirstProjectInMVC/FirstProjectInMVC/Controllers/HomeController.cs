@@ -15,10 +15,14 @@ namespace FirstProjectInMVC.Controllers
         //}
         public ActionResult Index()
         {
+            //ViewData["Titulo"] = "Home - Index";
+            ViewBag.Titulo = "Home - Index";
             return View();
         }
         public ActionResult Contato()
         {
+            //ViewData["Titulo"] = "Home - Contato";
+            ViewBag.Titulo = "Home - Contato";
             return View();
         }
     }

@@ -7,11 +7,16 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <title>Home - Index</title>
+    <title>@ViewBag.Titulo</title>
 </head>
 <body>
+    @if(ViewBag.Titulo.Contains("Home"))
+     {
+        <h1>@ViewBag.Titulo</h1>
+     }
     <div>
-        <h1>Home - Index</h1>
+        <h1>@ViewBag.Titulo</h1>
+        
     </div>
 </body>
 </html>
