@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FirstProjectInMVC.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -17,7 +18,12 @@ namespace FirstProjectInMVC.Controllers
         {
             //ViewData["Titulo"] = "Home - Index";
             ViewBag.Titulo = "Home - Index";
-            return View();
+
+            HomeIndexModel model = new HomeIndexModel();
+            model.TituloDaPagina = "Home - Index";
+            model.DataAtual = DateTime.Now;
+
+            return View(model);
         }
         public ActionResult Contato()
         {

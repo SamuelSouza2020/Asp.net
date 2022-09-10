@@ -7,16 +7,9 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <title>@ViewBag.Titulo</title>
+    <title>@Model.TituloDaPagina</title>
 </head>
 <body>
-    @if(ViewBag.Titulo.Contains("Home"))
-     {
-        <h1>@ViewBag.Titulo</h1>
-     }
-    <div>
-        <h1>@ViewBag.Titulo</h1>
-        
-    </div>
+    <h1>@Model.DataAtual</h1>
 </body>
 </html>
