@@ -17,16 +17,28 @@ namespace FirstProjectInMVC.Controllers
         public ActionResult Index()
         {
             //ViewData["Titulo"] = "Home - Index";
-            
+
             //ViewBag.Titulo = "Home - Index";
 
-            //HomeIndexModel model = new HomeIndexModel();
-            //model.TituloDaPagina = "Home - Index";
-            //model.DataAtual = DateTime.Now;
+            HomeIndexModel model = new HomeIndexModel();
+            model.TituloDaPagina = "Home - Index";
+            model.DataAtual = DateTime.Now;
 
-            HomeContatoModel model = new HomeContatoModel();
+            //HomeContatoModel model = new HomeContatoModel();
 
             return View(model);
+        }
+        public ActionResult ParametrosQueryString(string nome)
+        {
+            return Content(nome);
+        }
+        public ActionResult ParametrosRota(string nome)
+        {
+            return Content(nome);
+        }
+        public ActionResult ParametrosRota2(int? pagina)
+        {
+            return Content(pagina.HasValue ? pagina.ToString() : "0");
         }
         public ActionResult Contato()
         {

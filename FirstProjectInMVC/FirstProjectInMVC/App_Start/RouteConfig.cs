@@ -25,9 +25,29 @@ namespace FirstProjectInMVC
                 defaults: new { controller = "Home", action = "Index" }
             );
             routes.MapRoute(
+                name: "Home.ParametrosQueryString",
+                url: "parametros",
+                defaults: new { controller = "Home", action = "ParametrosQueryString" }
+            );
+            routes.MapRoute(
+                name: "Home.ParametrosRota",
+                url: "parametros/{nome}", 
+                defaults: new { controller = "Home", action = "ParametrosRota" }
+            );
+            routes.MapRoute(
+                name: "Home.ParametrosRota2",
+                url: "parametros2/{pagina}", 
+                defaults: new { controller = "Home", action = "ParametrosRota2" }
+            );
+            routes.MapRoute(
                 name: "Home.Contato",
                 url: "contato",
                 defaults: new { controller = "Home", action = "Contato" }
+            );
+            routes.MapRoute(
+                name: "Tarefas.Index",
+                url: "tarefas",
+                defaults: new { controller = "Tarefas", action = "Index" }
             );
         }
     }
